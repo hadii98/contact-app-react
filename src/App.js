@@ -24,7 +24,7 @@ function App() {
               exact
               element={<EditContact />}
             />
-            <Route path="/contact-app-react" exact element={<ContactList />} />
+            <Route path="/contact-app-react/" exact element={<ContactList />} />
             <Route
               path="/contact-app-react/contact/:id"
               exact
