@@ -31,8 +31,9 @@ export function ContactsCrudContextProvider({ children }) {
       id: uuid(),
       ...contact,
     };
-    const response = await api.post("/contacts", request);
+    const response = await api.post("/#/contacts", request);
     setContacts([...contacts, response.data]);
+    console.log(contacts);
   };
 
   //UpdateContacts
@@ -44,6 +45,7 @@ export function ContactsCrudContextProvider({ children }) {
         return contact.id === id ? { ...response.data } : contact;
       })
     );
+    console.log(response.data);
   };
 
   //SearchContacts
