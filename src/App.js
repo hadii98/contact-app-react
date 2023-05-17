@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/add" exact element={<AddContact />} />
             <Route path="/contacts/:id" exact element={<EditContact />} />
-            <Route path="/" exact element={<ContactList />} />
+            <Route path="" exact element={<ContactList />} />
             <Route path="/contact/:id" exact component={ContactDetails} />
             <Route path="/delete" exact element={<ContactDelete />} />
           </Routes>
