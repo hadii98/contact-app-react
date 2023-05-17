@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
@@ -10,7 +10,7 @@ import { ContactsCrudContextProvider } from "./context/ContactsCrudContext";
 function App() {
   return (
     <div className="ui container">
-      <Router>
+      <HashRouter>
         <Header />
         <ContactsCrudContextProvider>
           <Routes>
@@ -37,7 +37,7 @@ function App() {
             />
           </Routes>
         </ContactsCrudContextProvider>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
