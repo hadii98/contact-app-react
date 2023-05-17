@@ -14,11 +14,27 @@ function App() {
         <Header />
         <ContactsCrudContextProvider>
           <Routes>
-            <Route path="/add" exact element={<AddContact />} />
-            <Route path="/contacts/:id" exact element={<EditContact />} />
-            <Route path="/" exact element={<ContactList />} />
-            <Route path="/contact/:id" exact component={ContactDetails} />
-            <Route path="/delete" exact element={<ContactDelete />} />
+            <Route
+              path="/contact-app-react/add"
+              exact
+              element={<AddContact />}
+            />
+            <Route
+              path="/contact-app-react/contacts/:id"
+              exact
+              element={<EditContact />}
+            />
+            <Route path="/contact-app-react/" exact element={<ContactList />} />
+            <Route
+              path="/contact-app-react/contact/:id"
+              exact
+              component={ContactDetails}
+            />
+            <Route
+              path="/contact-app-react/delete"
+              exact
+              element={<ContactDelete />}
+            />
           </Routes>
         </ContactsCrudContextProvider>
       </Router>
