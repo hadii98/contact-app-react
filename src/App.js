@@ -10,13 +10,13 @@ import { ContactsCrudContextProvider } from "./context/ContactsCrudContext";
 function App() {
   return (
     <div className="ui container">
-      <Router basename="/react-dummy">
+      <Router basename="/contact-app-react">
         <Header />
         <ContactsCrudContextProvider>
           <Routes>
             <Route path="/add" exact element={<AddContact />} />
             <Route path="/contacts/:id" exact element={<EditContact />} />
-            <Route path="/react-dummy" exact element={<ContactList />} />
+            <Route path="/contact-app-react" exact element={<ContactList />} />
             <Route path="/contact/:id" exact component={ContactDetails} />
             <Route path="/delete" exact element={<ContactDelete />} />
           </Routes>
