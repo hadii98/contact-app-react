@@ -1,6 +1,6 @@
 {
   "homepage": "http://hadii98.github.io/contact-app-react",
-  "name": "contact-app",
+  "name": "contact-app-react",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
